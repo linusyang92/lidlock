@@ -242,7 +242,6 @@ int CALLBACK WinMain(HINSTANCE instance, HINSTANCE prevInstance, LPSTR commandLi
     HANDLE mutex = CreateMutex(NULL, FALSE, TEXT(SINGLETON_IDENTIFIER));
     DWORD err = GetLastError();
     if (err == ERROR_ALREADY_EXISTS) {
-        LOG("instance already exists");
         goto cleanup;
     }
 
