@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-//x86_64-w64-mingw32-gcc lidlock.c -o lidlock.exe -lole32 -lksguid -static -O2 -g0 -mwindows -Wall
+//x86_64-w64-mingw32-gcc -s lidlock.c -o lidlock.exe -lole32 -lksguid -static -O2 -g0 -mwindows -Wall
 
 #include <stdio.h>
 #include <time.h>
